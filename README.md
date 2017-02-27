@@ -1,5 +1,5 @@
-Coursera's "Neural Networks for Machine Learning" handouts, translated to Python.
----------------------------------------------------------------------------------
+Coursera's "Neural Networks for Machine Learning" assignments handouts, translated to Python.
+---------------------------------------------------------------------------------------------
 
 
 Python version: 3.6
