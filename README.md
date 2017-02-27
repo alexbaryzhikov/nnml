@@ -4,4 +4,4 @@ Coursera's "Neural Networks for Machine Learning" assignments handouts, translat
 
 Python version: 3.6
 
-Dependencies: numpy, matplotlib
+Dependencies: numpy, scipy, matplotlib
