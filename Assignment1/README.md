@@ -4,4 +4,3 @@
 
 Python version: 3.6
 
-Dependencies: numpy, scipy, matplotlib
