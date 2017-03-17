@@ -98,8 +98,10 @@ These functions are meant to be used for analyzing the model after the training
 is done.
 >display_nearest_words.m : This method will display the words closest to a
     given word in the word representation space.
+>
 >word_distance.m : This method will compute the distance between two given
     words.
+>
 >predict_next_word.m : This method will produce some predictions for the next
     word given 3 previous words.
 
