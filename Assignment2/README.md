@@ -21,18 +21,18 @@ dealing with here. They are fairly simple ones.
 To load the data set, go to an octave terminal and cd to the directory where the
 downloaded data is located. Type
 
-> load data.mat
+    load data.mat
 
 This will load a struct called 'data' with 4 fields in it.
 You can see them by typing
 
-> fieldnames(data)
+    fieldnames(data)
 
 'data.vocab' contains the vocabulary of 250 words. Training, validation and
 test sets are in 'data.trainData', 'data.validData' and 'data.testData'  respectively.
 To see the list of words in the vocabulary, type -
 
-> data.vocab
+    data.vocab
 
 'data.trainData' is a matrix of 372550 X 4. This means there are 372550
 training cases and 4 words per training case. Each entry is an integer that is
@@ -42,7 +42,7 @@ words. 'data.validData' and 'data.testData' are also similar. They contain
 and the training set needs to be split into mini-batches. The file load_data.m
 provides code for doing that. To run it type:
 
->[train_x, train_t, valid_x, valid_t, test_x, test_t, vocab] = load_data(100);
+    [train_x, train_t, valid_x, valid_t, test_x, test_t, vocab] = load_data(100);
 
 This will load the data, separate it into inputs and target, and make
 mini-batches of size 100 for the training set.
@@ -50,7 +50,7 @@ mini-batches of size 100 for the training set.
 train.m implements the function that trains a neural net language model.
 To run the training, execute the following -
 
-> model = train(1);
+    model = train(1);
 
 This will train the model for one epoch (one pass through the training set).
 Currently, the training is not implemented and the cross entropy will not
@@ -97,13 +97,13 @@ frequently if you want to.
 These functions are meant to be used for analyzing the model after the training
 is done.
 
-    display_nearest_words.m : This method will display the words closest to a
+  display_nearest_words.m : This method will display the words closest to a
     given word in the word representation space.
   
-    word_distance.m : This method will compute the distance between two given
+  word_distance.m : This method will compute the distance between two given
     words.
 
-    predict_next_word.m : This method will produce some predictions for the next
+  predict_next_word.m : This method will produce some predictions for the next
     word given 3 previous words.
 
 Take a look at the documentation inside these functions to see how to use them.
