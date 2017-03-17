@@ -1,8 +1,6 @@
-# --------------------------------------
-# Neural Networks for Machine Learning
-# Programming Assignment 2
-# Learning word representations.
-# --------------------------------------
+Neural Networks for Machine Learning
+Programming Assignment 2
+Learning word representations.
 
 In this assignment, you will design a neural net language model that will
 learn to predict the next word, given previous three words.
