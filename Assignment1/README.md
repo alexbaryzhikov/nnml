@@ -1,6 +1,6 @@
-Coursera's "Neural Networks for Machine Learning" assignments handouts, translated to Python.
----------------------------------------------------------------------------------------------
-
+### Neural Networks for Machine Learning
+### Programming Assignment 1
+# The perceptron learning algorithm.
 
 Python version: 3.6
 
