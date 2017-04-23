@@ -43,7 +43,7 @@ Place both of them in the same directory, start Python, cd to that directory, an
 run a test run without any training: a3(0, 0, 0, 0, 0, false, 0). You should see
 messages that tell you the loss and classification error rate without any training.
 
-Q: What is the loss on the training data for that test run? Write your answer with at
+> What is the loss on the training data for that test run? Write your answer with at
    least 5 digits after the decimal point.
 
 
@@ -115,7 +115,7 @@ validation data.
 Let's do an initial run with with learning rate 0.005 and no momentum:
 run a3(0, 10, 70, 0.005, 0, false, 4)
 
-Q: What is the training data loss that that run reports at the end? Use at least 5
+> What is the training data loss that that run reports at the end? Use at least 5
 digits after the decimal point.
 
 In the plot you'll see that training data loss and validation data loss are both
@@ -143,11 +143,12 @@ the optimization works.
 
 Which of those 14 worked best?
 
-Q: Was the best run a run with momentum or without momentum?
+> Was the best run a run with momentum or without momentum?
 - The best of those 14 runs was with momentum.
 - The best of those 14 runs was without momentum.
 
-Q: What was the learning rate for the best of those 14 runs?
+> What was the learning rate for the best of those 14 runs?
+
 0.002, 0.01, 0.05, 0.2, 1.0, 5.0, 20.0
 
 
@@ -165,7 +166,7 @@ units, 1000 optimization iterations, a learning rate of 0.35, momentum of 0.9, n
 stopping, and mini-batch size 100, i.e. run a3(0, 200, 1000, 0.35, 0.9, false, 100).
 This run will take more time.
 
-Q: What is the validation data classification loss now? Write your answer with at least
+> What is the validation data classification loss now? Write your answer with at least
 5 digits after the decimal point.
 
 The simplest form of regularization is early stopping: we use the weights as they were
@@ -174,7 +175,7 @@ end of the 1000 optimization iterations, but quite a bit earlier. The script has
 option for early stopping. Run the experiment with the early stopping parameter set to
 true. Now the generalization should be better.
 
-Q: What is the validation data classification loss now, i.e. with early stopping?
+> What is the validation data classification loss now, i.e. with early stopping?
 
 Another regularization method is weight decay. Let's turn off early stopping, and
 instead investigate weight decay. The script has an option for L2 weight decay. As long
@@ -185,6 +186,7 @@ We've already run the experiment with WD=0. Run additional experiments with the 
 WD coefficients listed below, and indicate which of them gave the best generalization.
 Be careful to focus on the classification loss (i.e. without the weight decay loss), as
 opposed to the final loss (which does include the weight decay loss).
+
 0, 0.1, 0.001, 10, 1, 0.0001
 
 Yet another regularization strategy is reducing the number of model parameters, so that
@@ -193,14 +195,16 @@ details of the training set. In our case, we can vary the number of hidden units
 it's clear that our model is overfitting, we'll look into reducing the number of hidden
 units.
 
-Q: Turn off the weight decay, and instead try the following hidden layer sizes. Indicate
+> Turn off the weight decay, and instead try the following hidden layer sizes. Indicate
 which one worked best.
+
 200, 10, 130, 30, 100
 
 Most regularization methods can be combined quite well. Let's combine early stopping
 with a carefully chosen hidden layer size. Which number of hidden units works best that
 way, i.e. with early stopping? Remember, best, here, is based on only the validation data
 loss.
+
 83, 18, 236, 37, 113
 
 Of course, we could explore a lot more, such as maybe combining all 3 regularization
@@ -213,6 +217,6 @@ established a good optimization strategy as well as a good regularization strate
 it's time to see how well our model does on the task that we really cared about:
 reading handwritten digits.
 
-Q: For the settings that you chose on the previous question, what is the test data
+> For the settings that you chose on the previous question, what is the test data
 classification error rate?
 
