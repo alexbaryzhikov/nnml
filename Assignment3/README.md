@@ -146,7 +146,7 @@ Which of those 14 worked best?
 > Was the best run a run with momentum or without momentum?
 > - The best of those 14 runs was with momentum.
 > - The best of those 14 runs was without momentum.
->
+
 > What was the learning rate for the best of those 14 runs?
 >
 > 0.002, 0.01, 0.05, 0.2, 1.0, 5.0, 20.0
@@ -182,11 +182,11 @@ instead investigate weight decay. The script has an option for L2 weight decay. 
 as the coefficient is 0, in effect there is no weight decay, but let's try some
 different coefficients.
 
-We've already run the experiment with WD=0. Run additional experiments with the other
+> We've already run the experiment with WD=0. Run additional experiments with the other
 WD coefficients listed below, and indicate which of them gave the best generalization.
 Be careful to focus on the classification loss (i.e. without the weight decay loss), as
 opposed to the final loss (which does include the weight decay loss).
-
+>
 > 0, 0.1, 0.001, 10, 1, 0.0001
 
 Yet another regularization strategy is reducing the number of model parameters, so that
@@ -201,10 +201,11 @@ which one worked best.
 > 200, 10, 130, 30, 100
 
 Most regularization methods can be combined quite well. Let's combine early stopping
-with a carefully chosen hidden layer size. Which number of hidden units works best that
-way, i.e. with early stopping? Remember, best, here, is based on only the validation data
-loss.
+with a carefully chosen hidden layer size.
 
+> Which number of hidden units works best that way, i.e. with early stopping? Remember,
+best, here, is based on only the validation data loss.
+>
 > 83, 18, 236, 37, 113
 
 Of course, we could explore a lot more, such as maybe combining all 3 regularization
