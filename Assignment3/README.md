@@ -144,12 +144,12 @@ the optimization works.
 Which of those 14 worked best?
 
 > Was the best run a run with momentum or without momentum?
-- The best of those 14 runs was with momentum.
-- The best of those 14 runs was without momentum.
-
+> - The best of those 14 runs was with momentum.
+> - The best of those 14 runs was without momentum.
+>
 > What was the learning rate for the best of those 14 runs?
-
-0.002, 0.01, 0.05, 0.2, 1.0, 5.0, 20.0
+>
+> 0.002, 0.01, 0.05, 0.2, 1.0, 5.0, 20.0
 
 
 ### Part 4: Generalization
@@ -187,7 +187,7 @@ WD coefficients listed below, and indicate which of them gave the best generaliz
 Be careful to focus on the classification loss (i.e. without the weight decay loss), as
 opposed to the final loss (which does include the weight decay loss).
 
-0, 0.1, 0.001, 10, 1, 0.0001
+> 0, 0.1, 0.001, 10, 1, 0.0001
 
 Yet another regularization strategy is reducing the number of model parameters, so that
 the model simply doesn't have the brain capacity to overfit a lot by learning too many
@@ -197,15 +197,15 @@ units.
 
 > Turn off the weight decay, and instead try the following hidden layer sizes. Indicate
 which one worked best.
-
-200, 10, 130, 30, 100
+>
+> 200, 10, 130, 30, 100
 
 Most regularization methods can be combined quite well. Let's combine early stopping
 with a carefully chosen hidden layer size. Which number of hidden units works best that
 way, i.e. with early stopping? Remember, best, here, is based on only the validation data
 loss.
 
-83, 18, 236, 37, 113
+> 83, 18, 236, 37, 113
 
 Of course, we could explore a lot more, such as maybe combining all 3 regularization
 methods, and that might work a little better. If you want to, you can play with the
