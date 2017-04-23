@@ -1,6 +1,6 @@
 ### Neural Networks for Machine Learning
 ### Programming Assignment 3
-## Optimization and generalization
+# Optimization and generalization
 
 In this assignment, you're going to train a simple Neural Network, for recognizing
 handwritten digits. You'll be programming, looking into efficient optimization, and
@@ -36,9 +36,7 @@ is gradient descent with momentum, but we'll need to find good values for the le
 rate and the momentum multiplier.
 
 
-#######################################
-Part 1: Setting up
-#######################################
+### Part 1: Setting up
 
 Download the code and the data. Make sure that the data file is called "data.mat".
 Place both of them in the same directory, start Python, cd to that directory, and
@@ -49,9 +47,7 @@ Q: What is the loss on the training data for that test run? Write your answer wi
    least 5 digits after the decimal point.
 
 
-#######################################
-Part 2: Programming
-#######################################
+### Part 2: Programming
 
 Most of the code has already been written for you. The script in a3.m loads the data
 (training, validation, and test), performs the optimization, and reports the results,
@@ -104,9 +100,7 @@ from the gradient checker, look closely at the numbers in that error message. Wh
 have a correct implementation, proceed to the next part.
 
 
-#######################################
-Part 3: Optimization
-#######################################
+### Part 3: Optimization
 
 We'll start with a small version of the task, to best see the effect of the
 optimization parameters. The small version is that we don't use weight decay or early
@@ -157,9 +151,7 @@ Q: What was the learning rate for the best of those 14 runs?
 0.002, 0.01, 0.05, 0.2, 1.0, 5.0, 20.0
 
 
-#######################################
-Part 4: Generalization
-#######################################
+### Part 4: Generalization
 
 Now that we found good optimization settings, we're switching to a somewhat bigger
 task, and there we'll investigate generalization. Now we're interested mostly in the
