@@ -1,5 +1,5 @@
 ### Neural Networks for Machine Learning
-### Programming Assignment 1 : The perceptron learning algorithm
+### Programming Assignment 1: The perceptron learning algorithm
 
 In this assignment you will take the provided starter code and fill in the missing details in order to create a working perceptron implementation.
 
