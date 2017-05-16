@@ -1,6 +1,5 @@
 ### Neural Networks for Machine Learning
-### Programming Assignment 3
-# Optimization and generalization
+### Programming Assignment 3: Optimization and generalization
 
 In this assignment, you're going to train a simple Neural Network, for recognizing
 handwritten digits. You'll be programming, looking into efficient optimization, and
