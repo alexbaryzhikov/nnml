@@ -46,22 +46,22 @@ DISCLAIMER: Before beginning the actual quiz portion of the assignment, please r
 > True  
 > False  
 
-4) The perceptron algorithm as implemented and described in class implicitly uses a learning rate of 1. We can modify the algorithm to use a different learning rate α so that the update rule for an input x and target t becomes:
+4) The perceptron algorithm as implemented and described in class implicitly uses a learning rate of 1. We can modify the algorithm to use a different learning rate α so that the update rule for an input x and target t becomes:  
 ```
 w^t ← w^(t−1) + α(t−prediction)x
 ```
-   where prediction is the decision made by the perceptron using the current weight vector w(t−1), given by:
+   where prediction is the decision made by the perceptron using the current weight vector w(t−1), given by:  
 ```
-prediction={ 1 if w^T, x≥00 otherwise }
+prediction = { 1 if w^T, x≥00 otherwise }
 ```
-   True or false: if we use a learning rate of 0.5, then the perceptron algorithm will always converge to a solution for linearly separable datasets.
+   True or false: if we use a learning rate of 0.5, then the perceptron algorithm will always converge to a solution for linearly separable datasets.  
 
 > True  
 > False  
 
 5) According to the code, how many iterations does it take for the perceptron to converge to a solution on dataset 1 using the provided initial weight vector w_init?
 
-   Note: the program will output `Number of errors in iteration x:	0`
+   Note: the program will output `Number of errors in iteration x:	0`  
    You simply need to report x.
 
 > 5  
