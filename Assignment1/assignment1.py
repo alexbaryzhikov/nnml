@@ -266,7 +266,4 @@ def plot_perceptron(neg_examples, pos_examples, mistakes0, mistakes1, \
     plt.close(f)
 
 
-# -----------------------------------------------------------------------------
-# Example usage
 
-# learn_perceptron()
