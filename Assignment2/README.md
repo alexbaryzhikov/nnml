@@ -12,7 +12,8 @@ assignment special characters such as commas, full-stops, parentheses etc
 are also considered words. The training set consists of 372,550 4-grams. The
 validation and test sets have 46,568 4-grams each.
 
-### GETTING STARTED.
+### Getting started
+
 Look at the file raw_sentences.txt. It contains the raw sentences from which
 these 4-grams were extracted. Take a look at the kind of sentences we are
 dealing with here. They are fairly simple ones.
@@ -64,7 +65,8 @@ The training method will output a 'model' (a struct containing weights, biases
 and a list of words). Now it's time to play around with the learned model
 and answer the questions in the assignment.
 
-### DESCRIPTION OF THE NETWORK.
+### Description of the network
+
 The network consists of an input layer, embedding layer, hidden layer and output
 layer. The input layer consists of three word indices. The same
 'word_embedding_weights' are used to map each index to a distributed feature
@@ -72,7 +74,8 @@ representation. These mapped features constitute the embedding layer. This layer
 is connected to the hidden layer, which in turn is connected to the output
 layer. The output layer is a softmax over the 250 words.
 
-### THINGS YOU SEE WHEN THE MODEL IS TRAINING.
+### Things you see when the model is training
+
 As the model trains it prints out some numbers that tell you how well the
 training is going.
 
@@ -91,8 +94,8 @@ the test set and the cross entropy on both is reported.
 You are welcome to change these numbers (100 and 1000) to see the CE's more
 frequently if you want to.
 
+### Some useful funtions
 
-### SOME USEFUL FUNCTIONS.
 These functions are meant to be used for analyzing the model after the training
 is done.
 > display_nearest_words.m : This method will display the words closest to a given word in the word representation space.  
@@ -101,8 +104,8 @@ is done.
 
 Take a look at the documentation inside these functions to see how to use them.
 
+### Things to try
 
-### THINGS TO TRY.
 Choose some words from the vocabulary and make a list. Find the words that
 the model thinks are close to words in this list (for example, find the words
 closest to 'companies', 'president', 'day', 'could', etc). Do the outputs make
